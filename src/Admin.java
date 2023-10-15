@@ -16,7 +16,7 @@ for(int i=0;i< numOfQuestions;i++){
   int num= scan.nextInt();
   question.setqId(num);
   scan.nextLine();
-
+    System.out.println();
     System.out.println("Please enter question");
     String quse=scan.nextLine();
     question.setQuestion(quse);
