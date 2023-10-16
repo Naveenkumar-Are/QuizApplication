@@ -1,9 +1,19 @@
+import java.util.ArrayList;
+
 public class Question {
     private String question;
    protected   String [] options;
    private int answer;
     private static int score;
     private int qId;
+
+
+    public Question(int qId, String question, String[] options, int answer){
+        this.question=question;
+        this.options=options;
+        this.answer=answer;
+        this.qId=qId;
+    }
 
     private int[] answerList;
 
@@ -26,15 +36,10 @@ public class Question {
         this.qId = qId;
     }
 
-    public Question(int qId, String question, String[] options, int answer){
-        this.question=question;
-        this.options=options;
-        this.answer=answer;
-        this.qId=qId;
-    }
+
    // public void points(){
-     //   if(this.answer==) {
-       //     score += 2;
+    //   if(this.answer==) {
+    //     score += 2;
        //     System.out.println("Hey!Congratulations correct answer you score is increased by 2 points"+ score);
       //  } else {
        //     score -= 1;
